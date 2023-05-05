@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+                  theme: {
+                          extend: {
+                              colors:{
+                                  'quasinegre':'#2c3434',
+                                  'gris':'#645c54',
+                                  'roig':'#ac2c34',
+                                  'grismig':'#a97d71',
+                                  'rosaclar':'#ddbfb2',
+                                  'roigclar':'#ba5349',
+                                  'rosa':'#d49482',
+                                  'grisclar': '#a49494'
+                              },
+                          },
+                      },
+                    }
+    </script>
+    <title>Gestionar ofertas</title>
+</head>
+<body id="body">
+
+  <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a href="index.html" class="flex items-center">
+        <img src="images/TALENT_SENIOR_sense_fondo.png" alt="ST Logo" width="100px">
+    </a>
+    <div class="flex md:order-2">
+        <button type="button" class="text-white bg-roigclar hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosa font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Get started</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-white">
+        <li>
+          <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-roig rounded md:bg-transparent md:text-roig md:p-0 " aria-current="page">Página principal</a>
+        </li>
+        <li>
+          <a href="landingEmp.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0 md::hover:text-white">Página empresa</a>
+        </li>
+        <li>
+          <a href="perfilemp.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0 md::hover:text-white">Perfil empresa</a>
+        </li>
+        <li>
+          <a href="publicarofertes.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0">Publicar Ofertas</a>
+        </li>
+        <li>
+          <a href="gestionarofertes.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0">Gestionar Oferta</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+      
+      <br><br><br>
+    
+    <div class="flex flex-col bg-rosaclar h-screen">
+
+        <form class = "m-20">
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm font-medium text-gris">Your email</label>
+              <input type="email" id="email" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="name@flowbite.com" required>
+            </div>
+            <div class="mb-6">
+              <label for="password" class="block mb-2 text-sm font-medium text-gris">Your password</label>
+              <input type="password" id="password" class="bg-white border border-grismig text-gris text-sm rounded-lg focus:ring-rosa focus:border-rosa block w-full p-2.5" placeholder="password" required>
+            </div>
+        
+            <div class="flex items-start mb-6">
+              <div class="flex items-center h-5">
+                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-grismig rounded bg-grisclar focus:ring-3 focus:rosaclar" required>
+              </div>
+              <label for="remember" class="ml-2 text-sm font-medium text-gris dark:text-grismig">Remember me</label>
+            </div>
+            
+            <button type="submit" class="text-white bg-roigclar hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+
+        </form>    
+
+</div>
+
+</body>
+
+    <footer>
+        <div class="flex justify-center bg-gris">
+          <img alt = "logo" title="Senior Talent" src="images/TALENT_SENIOR_sense_fondo.png" width="240px"/>
+          <div class ="flex flex-col">
+            <small class="ml-5 mt-10">&copy; Copyright 2020. All rights reserved.</small> 
+            <a href ="mailto:info@seniortalent.es" class="ml-5 text-sm">Correo electrónico</a>
+          </div>
+           
+        </div>
+      </footer>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+              theme: {
+                      extend: {
+                          colors:{
+                              'quasinegre':'#2c3434',
+                              'gris':'#645c54',
+                              'roig':'#ac2c34',
+                              'grismig':'#a97d71',
+                              'rosaclar':'#ddbfb2',
+                              'roigclar':'#ba5349',
+                              'rosa':'#d49482',
+                              'grisclar': '#a49494'
+                          },
+                      },
+                  },
+                }
+</script>
+
+
+<title>Document</title>
+<body id="body">
+
+<div class="flex flex-col bg-quasinegre h-screen">
+
+
+<nav class="pt-5 flex justify-between container mx-auto text-grisclar w-screen">
+  <a href="/" class="text-4xl font-bold">
+    <img class="m-8" alt = "logo" title="Senior Talent" src="images/logoST.png" width="150px"/>
+  </a>
+  
+  <div class="flex justify-end">
+      <a href="">login</a>
+      <span class="h6 text-primary">&nbsp|&nbsp</span>
+      <a href="">Registro</a>    
+  </div>
+
+</nav> 
+
+    <div class="flex px-2 items-center bg-grisclar">
+      <a href="/" class ="items-center">
+        <img class = "m-3 ml-20" alt = "logo" title="Senior Talent" src="images/logoST.png" width="75px"/>
+      </a>
+      <a href="landingCand.html" class="flex-auto ml-20">Página candidatos</a>
+      <a href="landingEmp.html" class="flex-auto">Página empresas</a>
+      <a href="llistafertes.html" class="flex-auto">Ofertas de trabajo</a>
+    </div>
+
+  <div class="flex container mx-auto items-center h-full">
+      <div class="flex w-1/2 flex-col">
+        <h1 class="font-bold text-rosaclar text-5xl leading-tight mb-4">Portal de empleo </h1>
+        <h1 class="font-bold text-rosaclar text-5xl leading-tight mb-4"><span class="font-bold underline">Senior</span> Talent</h1>
+        <p class="text-grisclar text-3xl mb-10">El talento no tiene edad</p>
+        <p class="text-rosaclar text-base"> Queremos aportar soluciones efectivas a la optimización del <strong>talento de profesionales</strong> sobre 50 años, buscamos hacer MATCH
+        Impulsamos el calce perfecto entre las necesidades de talento del mundo empresarial, principalmente de PYMES y Startups con el activo desaprovechado de profesionales sobre 50 años que se encuentran en condiciones de entregar todo su conocimiento y experiencia, en formatos flexibles y al alcance del negocio.</p>  
+        <div>
+          <button type="submit" class="m-6 text-white bg-roigclar hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">Entrar</button> 
+        </div>
+      </div>
+  </div> 
+        
+  
+</div>
+
+
+<footer>
+  <div class="flex justify-center bg-gris">
+    <img alt = "logo" title="Senior Talent" src="images/TALENT_SENIOR_sense_fondo.png" width="240px"/>
+    <div class ="flex flex-col">
+      <small class="ml-5 mt-10">&copy; Copyright 2020. All rights reserved.</small> 
+      <a href ="mailto:info@seniortalent.es" class="ml-5 text-sm">Correo electrónico</a>
+    </div>
+     
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+                theme: {
+                        extend: {
+                            colors:{
+                                'quasinegre':'#2c3434',
+                                'gris':'#645c54',
+                                'roig':'#ac2c34',
+                                'grismig':'#a97d71',
+                                'rosaclar':'#ddbfb2',
+                                'roigclar':'#ba5349',
+                                'rosa':'#d49482',
+                                'grisclar': '#a49494'
+                            },
+                        },
+                    },
+                  }
+  </script>
+
+
+    <title>CV</title>
+
+  </head>
+
+<body id="body">
+
+
+<nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+  <a href="index.html" class="flex items-center">
+      <img src="images/TALENT_SENIOR_sense_fondo.png" alt="ST Logo" width="100px">
+  </a>
+  <div class="flex md:order-2">
+      <button type="button" class="text-white bg-roigclar hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosa font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Get started</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-white">
+      <li>
+        <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-roig rounded md:bg-transparent md:text-roig md:p-0 " aria-current="page">Página principal</a>
+      </li>
+      <li>
+        <a href="landingCand.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0 md::hover:text-white">Página candidato</a>
+      </li>
+      <li>
+        <a href="cv.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0 md::hover:text-white">CV</a>
+      </li>
+      <li>
+        <a href="ofertescandidats.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0">Ofertas Candidato</a>
+      </li>
+      <li>
+        <a href="llistafertes.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-roig md:p-0">Buscar Ofertas</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+<div class="flex flex-col justify-center items-center bg-rosaclar w-full">
+
+  <form class = "m-40 mt-20 w-3/4">
+  
+    <fieldset class = "border-2">
+      <!-- Form Name -->
+      <legend class ="text-xl font-medium text-gris">Candidato</legend>
+
+
+      <!-- Textarea -->
+      <div class="ml-40 mr-40 mb-6">
+        <label for="password" class="block mb-2 text-sm font-medium text-gris">Presentación</label>
+        <textarea id="" class="bg-white border border-grismig text-gris text-sm rounded-lg focus:ring-rosa focus:border-rosa block w-full p-2.5" placeholder="Presentacion"></textarea>
+      </div>
+
+
+    <div class="flex ml-40 mr-40 justify-between"> 
+    
+        <!-- Text input-->
+        <div class="mb-6 grow">
+          <label for="nombre" class="block mb-2 text-sm font-medium text-gris">Nombre</label>
+          <input type="text" id="nombre" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="Nombre" required>
+        </div>
+
+        <!-- Text input-->
+        <div class="mb-6 grow">
+          <label for="apellido1" class="block mb-2 text-sm font-medium text-gris">Primer apellido</label>
+          <input type="text" id="apellido1" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="Primer apellido" required>
+        </div>
+
+        <!-- Text input-->
+        <div class="mb-6 grow">
+          <label for="apellido2" class="block mb-2 text-sm font-medium text-gris">Segundo Apellido</label>
+          <input type="text" id="apellido2" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="Segundo Apellido" required>
+        </div>
+    </div>
+
+
+ 
+
+    <div class="flex ml-40 mr-40 justify-end"> 
+        <!-- Text input-->
+        <div class="mb-6 grow">
+          <label for="localidad" class="block mb-2 text-sm font-medium text-gris">Localidad</label>
+          <input type="text" id="apellido2" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="localidad" required>
+        </div>
+
+        <!-- Text input-->
+        <div class="mb-6">
+          <label for="codpostal" class="block mb-2 text-sm font-medium text-gris">Código Postal</label>
+          <input type="number" id="codpostal" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="00000" required>
+        </div>
+
+        <!-- Text input-->
+        <div class="mb-6">
+          <label for="provincia" class="block mb-2 text-sm font-medium text-gris">Provincia</label>
+          <input type="text" id="provincia" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="Provincia" required>
+        </div>
+    </div>
+
+
+
+    <div class="flex ml-40 mr-40 justify-end"> 
+        <!-- Select Basic -->
+        <div class="mb-6">
+          <label for="situacionlaboral" class="block mb-2 text-sm font-medium text-gris">Situación Laboral</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <select id="situacionlaboral" name="situacionlaboral">
+              <option value="A(' trabajando'),'='">A("Trabajando"),</option>
+              <option value="B(' desempleo'),'='">B("Desempleo"),</option>
+              <option value="C(' mejora');'='">C("Mejora");</option>
+            </select>
+          </div>
+        </div>
+        <!-- Select Basic -->
+        <div class="mb-6">
+          <label for="auto" class="block mb-2 text-sm font-medium text-gris">Autónomo</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <select id="autónomo" name="autónomo">
+              <option value="si">si</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </div>
+        <!-- Select Basic -->
+        <div class="mb-6">
+          <label for="Vehi" class="block mb-2 text-sm font-medium text-gris">Vehículo</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <select id="vehiculo" name="vehiculo">
+              <option value="si">si</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="mb-6">
+          <label for="perm" class="block mb-2 text-sm font-medium text-gris">Permiso</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <select id="permiso" name="permiso">
+              <option value="si">si</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex ml-40 mr-40 justify-end"> 
+
+    </div>
+
+
+    <div class="flex ml-40 mr-40 justify-end"> 
+        <!-- Select Multiple -->
+        <div class="mb-6 grow">
+          <label for="compSoc" class="block mb-2 text-sm font-medium text-gris">Competencias sociales</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <select id="comptsoc" name="comptsoc" multiple="multiple">
+                <option value="A(" escucha="" activa")"="">A("Escucha activa")</option>
+                <option value="B(" asertividad")"="">B("Asertividad")</option>
+                <option value="C(" empatía")"="">C("Empatía")</option>
+                <option value="D(" capacidad="" de="" negociación")"="">D("Capacidad de negociación")</option>
+                <option value="E(" tolerancia")"="">E("Tolerancia")</option>
+                <option value="F(" honestidad")"="">F("Honestidad")</option>
+                <option value="G(" receptividad="" apertura="" de="" mente")"="">G("Receptividad/apertura de mente")</option>
+                <option value="H(" control="" emocional")"="">H("Control emocional")</option>
+                <option value="I(" extroversión")"="">I("Extroversión")</option>
+                <option value="J(" saber="" expresarse")"="">J("Saber expresarse")</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Select Multiple -->
+          <div class="mb-6 grow">
+            <label for="selecMult" class="block mb-2 text-sm font-medium text-gris">Selección multiple</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <select id="selectmultiple" name="selectmultiple" multiple="multiple">
+                <option value="A(" dominio="" de="" programas="" informáticos="" profesionales="" y="" redes="" sociales")"="">A("Dominio de programas informáticos profesionales y redes sociales")</option>
+                <option value="B(" tramites="" on-line="" de="" nivel="" avanzado")"="">B("Tramites on-line de nivel avanzado")</option>
+                <option value="C(" destreza="" en="" programas="" informáticos,="" apps")"="">C("Destreza en programas informáticos, APPs")</option>
+                <option value="D(" acceso="" a="" información="" de="" interés,="" envio="" email")"="">D("Acceso a información de interés, envio email")</option>
+                <option value="E(" manejo="" básico="" de="" ordenador")"="">E("Manejo básico de ordenador")</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Select Multiple -->
+          <div class="mb-6 grow">
+            <label for="compPer" class="block mb-2 text-sm font-medium text-gris">Competencias personales</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <select id="comptpers" name="comptpers" multiple="multiple">
+                <option value="A(" trabajo="" en="" equipo")"="">A("Trabajo en equipo")</option>
+                <option value="B(" resolución="" de="" conflictos")"="">B("Resolución de conflictos")</option>
+                <option value="C(" toma="" de="" decisiones")"="">C("Toma de decisiones")</option>
+                <option value="D(" pensamiento="" positivo")"="">D("Pensamiento positivo")</option>
+                <option value="E(" adaptación="" al="" cambio")"="">E("Adaptación al cambio")</option>
+                <option value="F(" comunicación="" eficaz")"="">F("Comunicación eficaz")</option>
+                <option value="G(" proactividad")"="">G("Proactividad")</option>
+                <option value="H(" liderazgo")"="">H("Liderazgo")</option>
+                <option value="I(" creatividad")"="">I("Creatividad")</option>
+                <option value="J(" tolerancia="" a="" la="" presión")"="">J("Tolerancia a la presión")</option>
+                <option value="K(" orientación="" a="" resultados")"="">K("Orientación a resultados")</option>
+              </select>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="flex ml-40 mr-40 justify-end"> 
+      <!-- Text input-->
+      <div class="mb-6">
+        <label for="fchanac" class="block mb-2 text-sm font-medium text-gris">Fecha de nacimiento</label>
+        <input type="date" id="fchanac" class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5" placeholder="Fecha de nacimiento" required>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="mb-6">
+        <label for="sexo" class="block mb-2 text-sm font-medium text-gris">Sexo</label>
+        <div class="bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5 ">
+          <select id="sexo" name="sexo">
+            <option value="hombre">hombre</option>
+            <option value="mujer">mujer</option>
+          </select>
+        </div>
+      </div>
+      <!-- Select Basic -->
+      <div class="mb-6">
+        <label for="nacio" class="block mb-2 text-sm font-medium text-gris">Nacionalidad</label>
+        <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+          <select id="nacionalidad" name="nacionalidad">
+            <option value="Española">Española</option>
+            <option value="Europea">Europea</option>
+            <option value="Extranjera">Extranjera</option>
+          </select>
+        </div>
+      </div>
+
+  </div> 
+
+    </fieldset>
+
+    <fieldset class="border-2">
+      
+        <!-- Form Name -->
+        <legend class ="text-xl font-medium text-gris">Experiencia</legend>
+        
+        <!-- Text input-->
+        <div class="ml-40 mr-40 mb-6">
+          <label for="nomEmp" class="block mb-2 text-sm font-medium text-gris">Empresa</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+          <input id="nomemp" name="nomemp" type="text" placeholder="Nombre empresa">
+            
+          </div>
+        </div>
+
+        <div class="flex ml-40 mr-40 justify-end"> 
+          <!-- Text input-->
+          <div class="mb-6 grow">
+            <label for="puesTrab" class="block mb-2 text-sm font-medium text-gris">Puesto de trabajo</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="nompuesto" name="nompuesto" type="text" placeholder="puesto de trabajo">
+              
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="fechaIni" class="block mb-2 text-sm font-medium text-gris">Fecha Inicio</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="fchincio" name="fchincio" type="text" placeholder="fecha inicio">
+              
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="fechaFin" class="block mb-2 text-sm font-medium text-gris">Fecha fin</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="fechafin" name="fechafin" type="text" placeholder="fecha fin">
+              
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Textarea -->
+        <div class="ml-40 mr-40 mb-6">
+          <label for="funcio" class="block mb-2 text-sm font-medium text-gris">Funciones</label>
+          <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">                    
+            <textarea class="form-control" id="funciones" name="funciones">default text</textarea>
+          </div>
+        </div>
+        
+        
+        <div class="flex ml-40 mr-40 justify-end"> 
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="salario" class="block mb-2 text-sm font-medium text-gris">Salario percibido</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="salario" name="salario" type="text" placeholder="Salario percibido">
+              
+            </div>
+          </div>
+          
+          
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="paxCargo" class="block mb-2 text-sm font-medium text-gris">Personas a cargo</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="paxcargo" name="paxcargo" type="text" placeholder="personas a cargo">
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex ml-40 mr-40 justify-end"> 
+          <button type="submit" class="mr-2 text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">-</button>
+          <button type="submit" class="text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">+</button>
+        </div>
+
+      </fieldset>
+
+      <fieldset class ="border-2">
+      
+        <!-- Form Name -->
+        <legend class ="text-xl font-medium text-gris">Estudios reglados</legend>
+        
+        <div class="flex ml-40 mr-40 justify-between"> 
+          <!-- Select Basic -->
+          <div class="mb-6">
+            <label for="nivel" class="block mb-2 text-sm font-medium text-gris">Selec bàsic</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <select id="nivel" name="nivel" class="form-control">
+                <option value="A(" estudios="" universitarios")"="">A("Estudios Universitarios")</option>
+                <option value="B(" fpii="" cfgs")"="">B("FPII/CFGS")</option>
+                <option value="C(" bachillerato="" fp1="" cfgm")"="">C("Bachillerato/FP1/CFGM")</option>
+                <option value="D(" eso")"="">D("ESO")</option>
+                <option value="E(" certificado="" de="" escolaridad="" básica")"="">E("Certificado de escolaridad/básica")</option>
+                <option value="F(" sin="" estudios")"="">F("Sin estudios")</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="mb-6 grow">
+            <label for="titulo" class="block mb-2 text-sm font-medium text-gris">Título</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="titulo" name="titulo" type="text" placeholder="título">
+              
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="flex ml-40 mr-40 justify-end"> 
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="fechaIniForm" class="block mb-2 text-sm font-medium text-gris">Fecha Inicio</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="fchinicio" name="fchinicio" type="text" placeholder="fecha inicio">
+              
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="fechaFinForm" class="block mb-2 text-sm font-medium text-gris">Fecha fin</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="fechfin" name="fechfin" type="text" placeholder="fecha fin">
+              
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="mb-6">
+            <label for="centro" class="block mb-2 text-sm font-medium text-gris">Centro</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="centro" name="centro" type="text" placeholder="centro">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="flex ml-40 mr-40 justify-end"> 
+          <button type="submit" class="mr-2 text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">-</button>
+          <button type="submit" class="text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">+</button>
+        </div>
+
+      </fieldset>
+      
+      <fieldset class = "border-2">
+                 
+            <!-- Form Name -->
+            <legend class ="text-xl font-medium text-gris">Estudios no reglados</legend>
+
+          <div class="flex ml-40 mr-40 justify-between">           
+            <!-- Text input-->
+            <div class="mb-6 grow">
+              <label for="curso" class="block mb-2 text-sm font-medium text-gris">Curso</label>
+              <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <input id="curso" name="curso" type="text" placeholder="curso">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="mb-6">
+              <label for="fechaIniCur" class="block mb-2 text-sm font-medium text-gris">Fecha Inicio</label>
+              <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <input id="fchafin" name="fchafin" type="date" placeholder="fecha inicio">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="mb-6">
+              <label for="fechaFinCur" class="block mb-2 text-sm font-medium text-gris">Fecha Fin</label>
+              <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <input id="fechfin" name="fechfin" type="date" placeholder="fecha fin">
+                
+              </div>
+            </div>
+
+        </div>  
+          
+          <!-- Text input-->
+          <div class="ml-40 mr-40 mb-6">
+            <label for="centroCurs" class="block mb-2 text-sm font-medium text-gris">Centro</label>
+            <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+            <input id="centro" name="centro" type="text" placeholder="centro">
+              
+            </div>
+          </div>
+
+          <div class="flex ml-40 mr-40 justify-end"> 
+            <button type="submit" class="mr-2 text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">-</button>
+            <button type="submit" class="text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">+</button>
+          </div>
+
+        </fieldset>
+
+      <fieldset class = "border-2">
+              
+          <!-- Form Name -->
+          <legend class ="text-xl font-medium text-gris">Idiomas</legend>
+        
+          <div class="flex ml-40 mr-40 justify-end">   
+            <!-- Text input-->
+            <div class="mb-6">
+              <label for="idioma" class="block mb-2 text-sm font-medium text-gris">Idioma</label>
+              <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+              <input id="idioma" name="idioma" type="text" placeholder="idioma">
+                
+              </div>
+            </div>
+            
+            <!-- Select Basic -->
+            <div class="mb-6">
+              <label for="nivelIdio" class="block mb-2 text-sm font-medium text-gris">Nivel</label>
+              <div class = "bg-white border border-grismig text-quasinegre text-sm rounded-lg focus:rosa focus:border-rosa block w-full p-2.5">
+                <select id="nivel" name="nivel">
+                  <option value="A1">A1</option>
+                  <option value="A2">A2</option>
+                  <option value="B1">B1</option>
+                  <option value="B2">B2</option>
+                  <option value="C1">C1</option>
+                  <option value="C2">C2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex ml-40 mr-40 justify-end"> 
+            <button type="submit" class="mr-2 text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">-</button>
+            <button type="submit" class="text-white bg-rosa hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">+</button>
+          </div>
+              
+      </fieldset>
+
+      <div class="flex items-start mb-6">
+        <div class="flex items-center h-5">
+          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-grismig rounded bg-grisclar focus:ring-3 focus:rosaclar" required>
+        </div>
+        <label for="remember" class="ml-2 text-sm font-medium text-gris dark:text-grismig">Remember me</label>
+      </div>
+      
+      <button type="submit" class="text-white bg-roigclar hover:bg-roig focus:ring-4 focus:outline-none focus:ring-rosaclar font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+
+    </form>
+
+</div>
+
+
+</body>
+<footer class="">
+  <div class="flex justify-center bg-gris">
+    <img alt = "logo" title="Senior Talent" src="images/TALENT_SENIOR_sense_fondo.png" width="240px"/>
+    <div class ="flex flex-col">
+      <small class="ml-5 mt-10">&copy; Copyright 2020. All rights reserved.</small> 
+      <a href ="mailto:info@seniortalent.es" class="ml-5 text-sm">Correo electrónico</a>
+    </div>
+     
+  </div>
+</footer>
+
+</html>
